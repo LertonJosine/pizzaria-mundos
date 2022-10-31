@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% include 'parcials/head.html' %}
+{% block content %}
+
+<ul>
+    {% for pizza in pizzas %}
+    <li><a href="{% url 'toppings' pizza.id %}">{{pizza}}</a></li>
+    {% endfor %}
+</ul>
+<a href="{% url 'new_pizza' %}">add a new pizza</a>
+
+{% endblock content %}

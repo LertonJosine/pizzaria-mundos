@@ -1,0 +1,11 @@
+from django.urls import path
+from pizzas.views import cardapio, inicial, new_pizza, toppings, new_topping
+
+urlpatterns = [
+    path('', inicial, name='home_page'),
+    path('cardapio/', cardapio, name='cardapio'),
+    path('toppings/<int:pizza_id>/', toppings, name='toppings' ),
+    path('new_pizza/', new_pizza, name='new_pizza'),
+    path('new_topping/<int:pizza_id>/', new_topping, name='new_topping'),
+    # path('edit_entry/<int:entry_id>/', edit_entry, name='edit_entry'),
+]

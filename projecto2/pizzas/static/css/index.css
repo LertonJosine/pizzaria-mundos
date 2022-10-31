@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+.main-container{
+    background-image: url(../imagens/pexels-elizabeth-zernetska-9001223.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        
+}
+
+.main-container-text{
+    max-width: 700px;
+}
+
+.main-container p{
+    width: fit-content;
+    height: fit-content;
+    font-size: x-large;
+    max-width: 700px;
+    max-height: 500px;
+    text-align: justify;
+    /* font-weight: bold; */
+    margin: 0% 5%;
+
+}
+
+
+@media(max-width:700px){
+    .main-container p{
+        color: red;
+
+    }    
+    
+}

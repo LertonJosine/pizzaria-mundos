@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% extends 'base.html' %}
+    {% comment %} {% load static %} {% endcomment %}
+    {% comment %} <link rel="stylesheet" href="{% static 'css/index.css' %}"> {% endcomment %}
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<body>
+
+    {% block content %}
+    <main class="main-container">
+
+        <div class="main-container-text">
+            <p>
+                clique <a href="{% url 'cardapio' %}">aqui</a> para ver o estoque de pizzas para hoje<br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus debitis assumenda culpa voluptatem.
+                Accusamus sed illo, perspiciatis maxime libero explicabo esse alias deserunt. Ut, id omnis sint nisi amet
+                mollitia.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis enim quia illum possimus, accusantium
+                deserunt sint asperiores alias, quidem optio corrupti temporibus molestiae aspernatur? Nisi facere
+                praesentium
+                fugit minima similique.
+            </p>
+        </div>
+
+    </main>
+
+    {% endblock content %}
+
+</body>

@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+
+}
+
+:root {
+    --red-costumized:rgb(238, 129, 129);
+    --red-costumized2: rgba(238, 129, 129, 0.466);
+    
+}
+
+
+
+.main-nav-container {
+
+    background-color: rgba(165, 42, 42, 0.800);
+
+}
+
+.container-title {
+    /* background-color: green; */
+    margin: auto;
+    font-family: cursive;
+    text-align: center;
+    padding: 3%;
+    font-size: x-large;
+    
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.main-container-authentication {
+    width: 100%;
+
+}
+
+.main-container-authentication h3, a{
+    margin: 1% 2%;
+    width: max-content;
+}
+
+.container-authentication{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+
+
+@media(max-width:700px){
+    .container-authentication{
+        display: block;
+        align-content: flex-start;
+
+    }    
+    .main-container-authentication{
+        display: flex;
+        
+    }
+}
+
+
+.main-container{
+    background-image: url(../imagens/pexels-elizabeth-zernetska-9001223.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 70vh;
+    display: flex;
+    background-color: var(--red-costumized2);
+    border-radius: 2px;
+    align-items: center;
+    justify-content: center;
+        
+}
+
+.main-container-text{
+    max-width: 700px;
+    background-color: var(--red-costumized2);
+    border-radius: 2px;
+    width: fit-content;
+    height: fit-content;
+    font-size: x-large;
+    max-height: 500px;
+    text-align: justify;
+    font-weight: bold;
+    margin: 0% 5%;
+    font-family: cursive;
+    text-indent: 3em;
+    padding: 2%;
+    border-radius: 12px;
+
+}
+
+.main-container p{
+    
+    
+
+}
+
+
+@media(max-width:700px){
+    .main-container p{
+        font-weight: lighter;
+        font-size: medium;
+    }    
+    
+}
