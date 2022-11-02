@@ -1,0 +1,10 @@
+@charset "UTF-8";
+:root{
+    --red-costumized: rgb(238, 129, 129);
+    --red-costumized2: rgba(238, 129, 129, 0.466);
+}
+input:focus-visible{
+    outline-color: var(--red-costumized);
+    outline-style: solid;
+    outline-width: 2px;
+}

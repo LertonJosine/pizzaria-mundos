@@ -15,7 +15,7 @@ def my_login_view(request):
         form = AuthenticationForm(data=request.POST)
         user_authenticated = authenticate(username=request.POST['username'], password= request.POST['password'])
         login(request, user_authenticated)
-        return HttpResponseRedirect(reverse('home'))
+        return HttpResponseRedirect(reverse('cardapio'))
 
     context = {
         'form':form
